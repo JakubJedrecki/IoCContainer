@@ -47,7 +47,9 @@ class ContainerTest {
         container.registerInterface(MyInterface::class, MyImplementation::class) { MyImplementation() }
 
         val impl = container.resolve<MyInterface>()
+        val impl2 = container.resolve<MyInterface>()
         assertIs<MyInterface>(impl)
+        assertNotEquals(impl, impl2)
     }
 
     @Test

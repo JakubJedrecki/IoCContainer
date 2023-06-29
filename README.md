@@ -13,8 +13,9 @@ Features
 
 The Main module demonstrates a basic setup to showcase how to use the Container class. It consists of the following components:
 
-Logger interface: Represents a logging mechanism.
-ConsoleLogger implementation: Implements the Logger interface and logs messages to the console.
-UserService class: A simple user management service that depends on a Logger implementation.
-UserController class: Another user management component that depends on the UserService.
+* Logger interface: Represents a logging mechanism.
+* ConsoleLogger implementation: Implements the Logger interface and logs messages to the console.
+* UserService class: A simple user management service that depends on a Logger implementation.
+* UserController class: Another user management component that depends on the UserService.
+
 The Main module shows how to register the dependencies and retrieve instances from the Container to demonstrate the usage of the IoC container.
